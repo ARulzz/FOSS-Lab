@@ -1,0 +1,36 @@
+Experiment 9
+-------------
+Advanced linux command curl,wget,ftp,ssh,grep
+----------------------------------------------
+1. curl
+--------
+curl <url> --> Fetches content of the url and displays in stdout
+curl -o <url1> -o <url2>
+curl -L <url> -->insist redirection
+
+2.wget
+------
+wget http://www.openss7.org/repos/tarballs/strx25-0.9.2.1.tar.bz2 -->get single file
+wget --limit-rate=200k http://www.openss7.org/repos/tarballs/strx25-0.9.2.1.tar.bz2 -->set download limit
+wget -c http://www.openss7.org/repos/tarballs/strx25-0.9.2.1.tar.bz2 -->Download resume
+wget -b http://www.openss7.org/repos/tarballs/strx25-0.9.2.1.tar.bz2 -->wget in background
+
+3.ftp
+----- 
+ftp IP/hostname
+ftp> open IP/hostnam
+ftp> get FILENAME
+ftp> put filename
+ftp> ls
+ftp> close
+
+4.ssh
+-----
+ssh remote_username@remote_host
+
+5.grep
+-------
+grep "literal_string" filename
+grep "string" FILE_PATTERN
+grep -i "the" demo_file
+grep "lines.*empty" demo_file

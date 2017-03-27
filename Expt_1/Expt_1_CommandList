@@ -1,0 +1,68 @@
+Expt_1 (TVE15CS010)
+===================
+Contents
+---------
+Linux Basic Commands
+Directory Structure
+Execute File
+Directory Operations
+
+Linux Basic Commands and Directory Operations
+---------------------------------------------------------
+1. touch <file name> 		# Creates a file 
+2. mkdir <folder name> 		# Creates a folder
+3. pwd 				# Gives the present Working directory
+4. ls 				# List all files in the current directory
+5. ls 				# Lists the files in the current directory
+6. ls -l 			# Prevides a long listing of all the files
+7. ls -l -h 			# Same as the above command but the file sizes will be in human readable form
+8. ls -F 			# Marks all the executable with a * and all the directories with a /
+9. ls --color 			# Shows a coloured listing of all the files
+10.ls -a 			# Shows all the files in the present directory including the special dot files
+11.cd <dirname> 		# Changes the directory to the subdirectory of the current directory
+12.cd .. 			# Changes the directory to the parent directory of the current directory
+13.cd ~ 			# Changes the directory to the home directory of the current user
+14.cd / 			# Changes the directory to the root directory of the current user
+15.cd ~<username>		# Changes the directory to the home sirectory of a different user
+16.cat <filename> 		# Displays the text scroll off the screen
+17.cat <file1> <file2> 		# Concatenates the contents of the two text files
+18.more <filename> 		# Displays the file one scornful at a time
+19.less <filename> 		# Similat but faster than the more command
+20.cp <file1> <file2> 		# Copies file 1 to file 2
+21.cp <file1> <dirname> 	# Copies file1 to Directory <dirname>
+22.cp -r <dirname1> <dirname2> 	# Copies dirname1 directory to directory dirname2
+23.mv <oldname> <newname> 	# Renames file with old name to new name
+24.mv <olddir> <newdir> 	# Renames directory with name olddir to newdir
+25.mv <filename> <dirname> 	# Moves files with name as filename to directory dirname
+26.clear 			# Clears the terminal screen
+27.locate <filename> 		# Searches for a specified filename
+28.passwd 			# Prompt to change the password of the current user
+29.whoami 			# Displays the details of the current logged in user
+30.which <package>		# Gives the location of symbolic link of current package
+31.man <commandname> 		# Finds out what a command does
+32.man -f <commandname> 	# One line summary of what the command does
+33.man -k <keyword> 		# Searches for a command with a particular keyword
+
+Basic Outline of Directories in a typical Linux System
+--------------------------------------------------------
+1. /bin		# User Binaries
+2. /sbin	# System Binaries
+3. /etc		# Configuration Files
+4  /dev		# Device Files
+5. /proc	# Process info
+6. /var		# Varibale Files	
+7. /tmp		# Temporary Files
+8. /usr		# User programs
+9. /home	# Home Directories
+10./boot	# Boot Loader Files
+11./lib		# System Libs
+12./opt		# Optional Add ons
+13./mnt		# Mount directory
+14./media	# Removable devices
+15./srv		# Service Data
+
+Executing a Bash Script
+------------------------
+1. cd to the directory which contains the file to be executed
+2. Type "chmod +x <fileName>" which provides system permissions for the file to be executed
+3. Type ./filename.sh to execute the file

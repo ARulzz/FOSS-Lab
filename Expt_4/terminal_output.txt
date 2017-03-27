@@ -1,0 +1,203 @@
+..........................OS.............................
+NAME="Ubuntu"
+VERSION="12.04.5 LTS, Precise Pangolin"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu precise (12.04.5 LTS)"
+VERSION_ID="12.04"
+ ............................Available Shells...................
+# /etc/shells: valid login shells
+/bin/sh
+/bin/dash
+/bin/bash
+/bin/rbash
+................................Mouse information....................................
+Keyboard Control:
+  auto repeat:  on    key click percent:  0    LED mask:  00000002
+  XKB indicators:
+    00: Caps Lock:   off    01: Num Lock:    on     02: Scroll Lock: off
+    03: Compose:     off    04: Kana:        off    05: Sleep:       off
+    06: Suspend:     off    07: Mute:        off    08: Misc:        off
+    09: Mail:        off    10: Charging:    off    11: Shift Lock:  off
+    12: Group 2:     off    13: Mouse Keys:  off
+  auto repeat delay:  500    repeat rate:  33
+  auto repeating keys:  00ffffffdffffbbf
+                        fadfffefffedffff
+                        9fffffffffffffff
+                        fff7ffffffffffff
+  bell percent:  50    bell pitch:  400    bell duration:  100
+Pointer Control:
+  acceleration:  2/1    threshold:  4
+Screen Saver:
+  prefer blanking:  yes    allow exposures:  yes
+  timeout:  0    cycle:  0
+Colors:
+  default colormap:  0x20    BlackPixel:  0    WhitePixel:  16777215
+Font Path:
+  /usr/share/fonts/X11/misc,/usr/share/fonts/X11/Type1,built-ins
+DPMS (Energy Star):
+  Standby: 0    Suspend: 0    Off: 0
+  DPMS is Enabled
+  Monitor is On
+............................Memmory Information..........................
+MemTotal:        2028624 kB
+MemFree:          333548 kB
+Buffers:          187316 kB
+Cached:           525164 kB
+SwapCached:            0 kB
+Active:          1042472 kB
+Inactive:         517240 kB
+Active(anon):     848916 kB
+Inactive(anon):    12112 kB
+Active(file):     193556 kB
+Inactive(file):   505128 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:       1150728 kB
+HighFree:          14640 kB
+LowTotal:         877896 kB
+LowFree:          318908 kB
+SwapTotal:       7812092 kB
+SwapFree:        7812092 kB
+Dirty:               348 kB
+Writeback:             0 kB
+AnonPages:        847340 kB
+Mapped:           157096 kB
+Shmem:             13800 kB
+Slab:              87076 kB
+SReclaimable:      72220 kB
+SUnreclaim:        14856 kB
+KernelStack:        3176 kB
+PageTables:         9004 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     8826404 kB
+Committed_AS:    2934776 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       31676 kB
+VmallocChunk:      90928 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:        8184 kB
+DirectMap2M:      905216 kB 
+..............................Hard disk information.......................
+Driver: 
+/dev/sda:
+
+ATA device, with non-removable media
+	Model Number:       WDC WD3200AAKX-221CA0                   
+	Serial Number:      WD-WCAYUU155731
+	Firmware Revision:  15.01H15
+	Transport:          Serial, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0
+Standards:
+	Supported: 8 7 6 5 
+	Likely used: 8
+Configuration:
+	Logical		max	current
+	cylinders	16383	16383
+	heads		16	16
+	sectors/track	63	63
+	--
+	CHS current addressable sectors:   16514064
+	LBA    user addressable sectors:  268435455
+	LBA48  user addressable sectors:  625142448
+	Logical/Physical Sector size:           512 bytes
+	device size with M = 1024*1024:      305245 MBytes
+	device size with M = 1000*1000:      320072 MBytes (320 GB)
+	cache/buffer size  = 16384 KBytes
+Capabilities:
+	LBA, IORDY(can be disabled)
+	Queue depth: 32
+	Standby timer values: spec'd by Standard, with device specific minimum
+	R/W multiple sector transfer: Max = 16	Current = 16
+	Recommended acoustic management value: 128, current value: 254
+	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+	     Cycle time: min=120ns recommended=120ns
+	PIO: pio0 pio1 pio2 pio3 pio4 
+	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+Commands/features:
+	Enabled	Supported:
+	   *	SMART feature set
+	    	Security Mode feature set
+	   *	Power Management feature set
+	   *	Write cache
+	   *	Look-ahead
+	   *	Host Protected Area feature set
+	   *	WRITE_BUFFER command
+	   *	READ_BUFFER command
+	   *	NOP cmd
+	   *	DOWNLOAD_MICROCODE
+	    	Power-Up In Standby feature set
+	   *	SET_FEATURES required to spinup after power up
+	    	SET_MAX security extension
+	    	Automatic Acoustic Management feature set
+	   *	48-bit Address feature set
+	   *	Device Configuration Overlay feature set
+	   *	Mandatory FLUSH_CACHE
+	   *	FLUSH_CACHE_EXT
+	   *	SMART error logging
+	   *	SMART self-test
+	   *	General Purpose Logging feature set
+	   *	64-bit World wide name
+	   *	{READ,WRITE}_DMA_EXT_GPL commands
+	   *	Segmented DOWNLOAD_MICROCODE
+	   *	Gen1 signaling speed (1.5Gb/s)
+	   *	Gen2 signaling speed (3.0Gb/s)
+	   *	Gen3 signaling speed (6.0Gb/s)
+	   *	Native Command Queueing (NCQ)
+	   *	Host-initiated interface power management
+	   *	Phy event counters
+	   *	NCQ priority information
+	    	DMA Setup Auto-Activate optimization
+	   *	Software settings preservation
+	   *	SMART Command Transport (SCT) feature set
+	   *	SCT Long Sector Access (AC1)
+	   *	SCT LBA Segment Access (AC2)
+	   *	SCT Features Control (AC4)
+	   *	SCT Data Tables (AC5)
+	    	unknown 206[12] (vendor specific)
+	    	unknown 206[13] (vendor specific)
+Security: 
+	Master password revision code = 65534
+		supported
+	not	enabled
+	not	locked
+		frozen
+	not	expired: security count
+		supported: enhanced erase
+	64min for SECURITY ERASE UNIT. 64min for ENHANCED SECURITY ERASE UNIT.
+Logical Unit WWN Device Identifier: 50014ee1aeb434f7
+	NAA		: 5
+	IEEE OUI	: 0014ee
+	Unique ID	: 1aeb434f7
+Checksum: correct 
+ ..........................File mounted..................................
+ rootfs / rootfs rw 0 0
+sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+udev /dev devtmpfs rw,relatime,size=1007008k,nr_inodes=215823,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
+tmpfs /run tmpfs rw,nosuid,noexec,relatime,size=202864k,mode=755 0 0
+/dev/disk/by-uuid/10efdba1-cec0-42df-be16-a0abc264b182 / ext4 rw,relatime,errors=remount-ro,user_xattr,barrier=1,data=ordered 0 0
+cgroup /sys/fs/cgroup tmpfs rw,relatime,mode=755 0 0
+none /sys/fs/fuse/connections fusectl rw,relatime 0 0
+none /sys/kernel/debug debugfs rw,relatime 0 0
+none /sys/kernel/security securityfs rw,relatime 0 0
+none /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k 0 0
+none /run/shm tmpfs rw,nosuid,nodev,relatime 0 0
+cgroup /sys/fs/cgroup/cpuset cgroup rw,relatime,cpuset 0 0
+cgroup /sys/fs/cgroup/cpu cgroup rw,relatime,cpu 0 0
+cgroup /sys/fs/cgroup/cpuacct cgroup rw,relatime,cpuacct 0 0
+cgroup /sys/fs/cgroup/memory cgroup rw,relatime,memory 0 0
+cgroup /sys/fs/cgroup/devices cgroup rw,relatime,devices 0 0
+cgroup /sys/fs/cgroup/freezer cgroup rw,relatime,freezer 0 0
+cgroup /sys/fs/cgroup/blkio cgroup rw,relatime,blkio 0 0
+cgroup /sys/fs/cgroup/perf_event cgroup rw,relatime,perf_event 0 0
+gvfs-fuse-daemon /home/ctse-40/.gvfs fuse.gvfs-fuse-daemon rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+

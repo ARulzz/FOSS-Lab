@@ -1,0 +1,65 @@
+[amrith@workStation Expt_5]$ ./calculator.sh 
+Enter Operand 1
+4
+Enter Operand 2
+5
+1.+
+2.-
+3.*
+4./
+5.%
+1
+Sum: 9
+Press 0 to continue
+Press 1 to exit
+0
+1.+
+2.-
+3.*
+4./
+5.%
+2
+Difference: -1
+Press 0 to continue
+Press 1 to exit
+0
+1.+
+2.-
+3.*
+4./
+5.%
+2
+Difference: -1
+Press 0 to continue
+Press 1 to exit
+0
+1.+
+2.-
+3.*
+4./
+5.%
+3
+Product: 20
+Press 0 to continue
+Press 1 to exit
+0
+1.+
+2.-
+3.*
+4./
+5.%
+4
+Quotient: 0
+Press 0 to continue
+Press 1 to exit
+0
+1.+
+2.-
+3.*
+4./
+5.%
+5
+Remainder: 4
+Press 0 to continue
+Press 1 to exit
+

@@ -1,0 +1,48 @@
+Program 2
+==========
+Redirection
+Pipes
+Filters
+Job Control
+File Ownership
+File Permission
+Links
+File System Hierarchy
+
+Redirection
+------------
+1. command > filename 	# Redirects output to file and overwrites previous content
+2. command >> file name # Redirects ouput to end of file
+3. sort < filename 	# Sorts content inside file 
+
+Pipes
+------
+# Redirects Output of Command Before Pipe as input to Command After Pipe
+1. command1 | command 2 | command 3 
+
+Example : ls | grep one
+The above command lists only the files which contain 'one' in their name
+
+Filters
+--------
+1. sort 	# Sorts the contents of the File 
+2. uniq		# Removes Duplicates from the file
+3. grep		# Examines each line of the file and outputs every line of the file containing the input string to the standard output		
+4. fmt          # Formats the contents of the file and outputs it to the standard output 
+5. pr		# Displays the contents of the file one page after the other and returns the output to the standard output
+6. head		# Displays the first ten lines of the file
+7. tail		# Displays the last ten lines of the file
+8. tr		# Takes input from the keyboard and outputs each character of the input to uppercase characters and outputs it to the standard output
+
+Job Control
+------------
+1. ps 		# List all processes running on system
+2. kill		# Sends a signal to the processes specified
+	1. kill -l 	# List the signal names that can be sent to the processes in linux
+	2. kill <PID>   # Kill process with id PID
+	3. kills -s SIGKILL <PID> # Send SIGKILL signal to process with PID
+3. jobs 	# Lists the jobs that the current shell is managing
+4. bg		# Used to put a process in the background
+5. fg		# Used to put a process in the foreground
+
+
