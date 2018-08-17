@@ -1,0 +1,782 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/rules-p-31iz6hfFutd16.js"></script><script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/quant.js" async="" type="text/javascript"></script><script async="" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/beacon.js"></script><script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/ads_002"></script><script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/ads"></script><script type="text/javascript" async="" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/ga.js"></script><script async="" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/analytics.js"></script><script async="" type="text/javascript" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/gpt.js"></script><script data-cfasync="false" data-pagespeed-no-defer="">var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function g(a,b,g,h,j,k,l,m){var n=new f.file(a,b,g,h,j,k,l);!0===m?d[a]=n:e[a]=n,c[a]=n,i(n)}function h(a,g,h,j,k,l,m,n,o){!0===l&&(a=a+"_"+b++);var p=new f.func(a,g,h,j,k,m,n);!0===o?d[a]=p:e[a]=p,c[a]=p,i(p)}function i(a){!0!==j(a)&&a.process()}function j(a){if(a.blockedBy instanceof Array)for(var b=0;b<a.blockedBy.length;b++){var d=a.blockedBy[b];if(!1===c.hasOwnProperty(d))return k(a.name+" blocked = "+d),!0;if(!0===a.proceedIfError&&!0===c[d].isError)return!1;if(!1===c[d].isComplete)return k(a.name+" blocked = "+d),!0}return!1}function k(a){var b=window.location.href,c=new RegExp("[?&]ezq=([^&#]*)","i"),d=c.exec(b);"1"===(d?d[1]:null)&&console.debug(a)}function l(){++a>20||(k("let's go"),m(d),m(e))}function m(a){for(var b in a)if(!1!==a.hasOwnProperty(b)){var c=a[b];!0===c.isComplete||j(c)||!0===c.isInitialized||!0===c.isError?!0===c.isError?k(c.name+": error"):!0===c.isComplete?k(c.name+": complete already"):!0===c.isInitialized&&k(c.name+": initialized already"):c.process()}}var a=0,b=0,c=[],d=[],e=[],f={func:function(a,b,d,e,f,g,h){var i=this;this.name=a,this.funcName=b,this.parameters=null===d?null:d instanceof Array?d:[d],this.isBlock=e,this.blockedBy=f,this.deleteWhenComplete=g,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=h,this.process=function(){k("... func = "+a),i.isInitialized=!0,i.isComplete=!0;var b=i.funcName.split(".");b.length>3||(3===b.length?window[b[0]][b[1]][b[2]].apply(null,this.parameters):2===b.length?window[b[0]][b[1]].apply(null,this.parameters):window[i.funcName].apply(null,this.parameters)),!0===i.deleteWhenComplete&&delete c[a],!0===i.isBlock&&(k("----- F'D: "+i.name),l())}},file:function(a,b,c,d,e,f,g){var h=this;this.name=a,this.path=b,this.async=e,this.defer=f,this.isBlock=c,this.blockedBy=d,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=g,this.process=function(){h.isInitialized=!0,k("... file = "+a);var c=document.createElement("script");c.src=b,!0===e?c.async=!0:!0===f&&(c.defer=!0),c.onerror=function(){k("----- ERR'D: "+h.name),h.isError=!0,!0===h.isBlock&&l()},c.onreadystatechange=c.onload=function(){var a=c.readyState;k("----- F'D: "+h.name),a&&!/loaded|complete/.test(a)||(h.isComplete=!0,!0===h.isBlock&&l())},document.getElementsByTagName("head")[0].appendChild(c)}}};return{addFile:g,addFunc:h,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync="false" data-pagespeed-no-defer="">__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:__ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+<script type="text/javascript">
+	var __banger_pmp_deals=[{"SlotName":"/1254144/linuxtopia_org-medrectangle-1","Deals":[]},{"SlotName":"/1254144/linuxtopia_org-box-3","Deals":[]}];
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">
+function ez_isclean( data ) {
+    if (typeof data === 'undefined') { data = document.URL; }
+    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    var isClean = !re.test(data);
+    return isClean;
+}
+
+var ez_queue = new Array();
+function sort_queue(a, b)
+{
+  if( a.priority < b.priority ) return -1;
+  else if( a.priority == b.priority ) return 0;
+  else return 1;
+}
+function execute_ez_queue()
+{
+  ez_queue.sort( sort_queue );
+
+  for( var i in ez_queue )
+  {
+        if(typeof ez_queue[i].method != "undefined")
+        {
+            try{
+                ez_queue[i].method.call( null );
+            }
+            catch (err) {
+
+            }
+        }
+  }
+}
+
+window.ez_ad_units = new Array();
+window.ezslots = new Array();
+function ez_write_tag(d) {
+    if(ez_isclean() && d instanceof Array) {
+
+		ez_ad_units[ez_ad_units.length] = d;
+        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
+		return ezcmd;
+    }
+    else {
+        return "1+1";
+    }
+}
+function in_array(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+</script><script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer="" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/dall.js" async=""></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer="">
+function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=2500,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[{code: 'div-gpt-ad-linuxtopia_org-medrectangle-1-0', sizes: [[970,250],[970,90],[728,90]], bids: [{bidder: 'districtm', params: { placementId: '110072' }},{bidder: 'pulsepoint', params: { cf: '728X90', cp: 560269, ct: 472601 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-linuxtopia_org-box-3-0', sizes: [[728,90]], bids: [{bidder: 'districtm', params: { placementId: '110072' }},{bidder: 'pulsepoint', params: { cf: '728X90', cp: 560269, ct: 472601 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] }];epbjs.addAdUnits(e);epbjs.aliasBidder('appnexus', 'districtm');epbjs.SS={"districtm":10035,"pulsepoint":10019,"sonobi":10048},epbjs.bidderSettings={districtm: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.800000; var adj2 = adj1 * 1.200000; return adj2; }},pulsepoint: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.700000; var adj2 = adj1 * 1.200000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){var s=e.cpm;return 5>s?(Math.floor(100*s)/100).toFixed(2):(Math.floor(10*s)/10).toFixed(2)}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder]?epbjs.SS[e.bidder]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi","criteo"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.200000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.setTargetingForGPTAsync()}})});
+</script><script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">window.isEZABL=false;window.ezmadspc=300;</script><script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">
+window.googletag = window.googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+
+
+</script><script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/pubads_impl_117.js" async=""></script>
+<script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">
+googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_0 = googletag.defineSlot('/1254144/linuxtopia_org-medrectangle-1',[970,250],'div-gpt-ad-linuxtopia_org-medrectangle-1-0').addService(googletag.pubads()).setTargeting('iid6','535549').setTargeting('t','134').setTargeting('d','31310').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1103').setTargeting('sap','1103').setTargeting('a','|254|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod3').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','4').setTargeting('al','1004').setTargeting('compid','0').setTargeting('tap','linuxtopia_org-medrectangle-1-535549').setTargeting('bv','2').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','2900').setTargeting('ezoic','1');ezslot_0.set('adsense_ad_types','text_image').set('adsense_background_color','001DAD').set('adsense_border_color','001DAD').set('adsense_channel_ids','6348624313').set('adsense_link_color','FFFFFF').set('adsense_text_color','FFFFFF').set('adsense_url_color','EEFF00');ezrpos[0]="0";ezslot_1 = googletag.defineSlot('/1254144/linuxtopia_org-box-3',[728,90],'div-gpt-ad-linuxtopia_org-box-3-0').addService(googletag.pubads()).setTargeting('iid6','537349').setTargeting('t','134').setTargeting('d','31310').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod3').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','2').setTargeting('al','1002').setTargeting('compid','2').setTargeting('tap','linuxtopia_org-box-3-537349').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','4600').setTargeting('br2','2300').setTargeting('ezoic','1');ezslot_1.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','6348624313').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[1]="1";}else{window.ezHideLocations=[];ezslot_0 = googletag.defineSlot('/1254144/linuxtopia_org-medrectangle-1',[970,250],'div-gpt-ad-linuxtopia_org-medrectangle-1-0').addService(googletag.pubads()).setTargeting('iid6','535549').setTargeting('t','134').setTargeting('d','31310').setTargeting('t1','134').setTargeting('pvc','1').setTargeting('ap','1103').setTargeting('sap','1103').setTargeting('a','|254|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod3').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','n').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','4').setTargeting('al','1004').setTargeting('compid','0').setTargeting('tap','linuxtopia_org-medrectangle-1-535549').setTargeting('bv','2').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','2900').setTargeting('ezoic','1');ezslot_0.set('adsense_ad_types','text_image').set('adsense_background_color','001DAD').set('adsense_border_color','001DAD').set('adsense_channel_ids','6348624313').set('adsense_link_color','FFFFFF').set('adsense_text_color','FFFFFF').set('adsense_url_color','EEFF00');ezrpos[0]="0";window.ezHideLocations.push('div-gpt-ad-linuxtopia_org-box-3-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { __ez.queue.addFunc("ezvbc", "ezvbc", event, false, ['banger.js'], true, true, false, true); });googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_0");ezslots.push("ezslot_1");}else{ezslots.push("ezslot_0");}</script>
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":0,"ad_location_ids":"4,2","adx_ad_count":1,"bidder_version":0,"city":"","country":"IN","days_since_last_visit":-1,"display_ad_count":2,"domain_id":31310,"ds_adsize_opt_id":-1,"engaged_time_visit":760,"ezcache_level":0,"forensiq_score":-1,"form_factor_id":1,"has_bad_words":0,"iab_category":"","is_return_visitor":false,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"max_ads":4,"metro_code":0,"page_ad_positions":"1102,1103","page_view_count":1,"page_view_id":"08c009f7-398d-4dbb-4d6c-53d989a45185","pv_event_count":0,"response_time_orig":674,"serverid":"54.255.247.31:16142","sub_page_ad_positions":"1102,1103","t_epoch":1494675689,"template_id":134,"time_on_site_visit":11914,"url":"http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s03.html","user_id":454384772,"word_count":346};var _ezim_d = {"linuxtopia_org-box-3":{"adx_ad_count":1,"full_id":"linuxtopia_org-box-3/2017-05-13/537349","height":"90","position_id":1102,"sub_position_id":1102,"width":"728"},"linuxtopia_org-medrectangle-1":{"adx_ad_count":1,"full_id":"linuxtopia_org-medrectangle-1/2017-05-13/535549","height":"250","position_id":1103,"sub_position_id":1103,"width":"970"}};var _ezat = {"domain_id":31310,"form_factor_id":1,"pageview_date":"2017-05-13","pageview_id":"08c009f7-398d-4dbb-4d6c-53d989a45185","template_id":134,"url":"http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s03.html","visit_uuid":"2ee695f9-91aa-4141-48f2-f4f5b09c5311"};</script><script data-cfasync="false" type="text/javascript" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/rochester.js" async=""></script><script data-pagespeed-no-defer="" data-cfasync="false" type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=157-0&bv=2&v=8&PageSpeed=off', true, [], true, false, false, true);</script><script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/banger.js" async=""></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-8/html/container.html"><script data-pagespeed-no-defer="" data-cfasync="false">
+function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = "ezux_lpl_31310=" + new Date().getTime() + "|08c009f7-398d-4dbb-4d6c-53d989a45185; " + expires;
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+</script>
+<title>Linux Kernel Configuration - Building the kernel</title>
+
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Linux, Kernel, Kernel Configuration">
+<meta name="description" content="Linux Kernel Configuration Guide">
+<meta name="distribution" content="global"> 
+
+
+<script language="JavaScript" type="text/JavaScript" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/myfreetemplates.js"></script>
+<link href="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/linuxtopia.css" rel="stylesheet" type="text/css">
+<!-- Ezoic Ad Testing Code-->
+
+<!-- Ezoic Ad Testing Code-->
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.linuxtopia.org/linuxtopia.rss">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-350808-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+  // Stop some malicious behaviors...
+   if ( top != self) {      
+    top.location.replace(document.location);
+    alert("iFrame not allowed; click OK to load this page without the iFrame.")
+   }
+   if ( location.search.length > 0 ) {
+    location.search = '' ;
+   }
+  </script>
+
+<script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/ezosuigeneris.js" async=""></script><script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/ezosuigenerisc.js" async=""></script></head><body onload="MM_preloadImages('/images/btn_home_dn.jpg','/images/btn_about_dn.jpg','/images/btn_contact_dn.jpg','/images/btn_products_dn.jpg','/images/btn_support_dn.jpg','/images/btn_news_dn.jpg')" topmargin="0" leftmargin="0" cz-shortcut-listen="true" marginwidth="0" marginheight="0"><div id="search-div">
+<form action="http://www.linuxtopia.org/SearchResults.html" id="cse-search-box">
+  <div>
+    <input name="cx" value="partner-pub-7393409044112403:n9o0jl-7n7c" type="hidden">
+    <input name="cof" value="FORID:10" type="hidden">
+    <input name="ie" value="ISO-8859-1" type="hidden">
+    <input name="q" size="15" style="background: rgb(255, 255, 255) url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) no-repeat scroll left center; text-indent: 48px;" placeholder="Custom Search" type="text">
+    <input name="sa" value="Search" type="submit">
+  </div>
+<input name="siteurl" value="www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s03.html" type="hidden"><input name="ref" value="www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s02.html" type="hidden"><input name="ss" type="hidden"></form>
+<script type="text/javascript" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/brand"></script>
+</div>
+
+
+
+<style>
+	.ezmob-footer {
+	    position: fixed; left: 0px; bottom: 0px; height: 50px; width: 100%; background: white; z-index: 1000;
+	}
+    body {
+        padding-bottom: 50px;
+    }
+</style>
+<style>.ezoic-ad.medrectangle-1 { display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:970px; }
+.ezoic-ad.box-3 { display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px; }
+.ezoic-ad{display:inline-block;}
+.ezoic-floating-bottom { display: none!important; }</style><link rel="canonical" href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s03.html">
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-85187682-39";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-85187682-39']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'linuxtopia.org']);
+_gaq.push(['f._setDomainName', 'linuxtopia.org']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['e._setCustomVar',2,'t','134',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod3',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['f._setCustomVar',2,'domain','linuxtopia.org',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "454384772";</script><!-- base href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s03.html" --><script type="text/javascript">
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script type="text/javascript">
+var soc_app_id = '0';
+var did = 31310;
+var ezdomain = 'linuxtopia.org';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-pagespeed-no-defer="" data-cfasync="false" type="text/javascript" style="display:none">
+__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js', true, [], true, false, false, false);
+var __ez_ezosuigenerisEvt = function() { __ez.bit.AddAndFire(_ezaq['page_view_id'], [(new __ezDotData('universal_user_id', ezosuigeneris))]); };
+__ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, false, ['__ezf_ezosuigeneris'], false, false, false, false);</script><script data-pagespeed-no-defer="" data-cfasync="false" type="text/javascript" style="display:none">__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?nogen=1', true, [], true, false, false, false);</script>
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="100%">
+  <tbody><tr> 
+    <td height="87"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tbody><tr> 
+          <td rowspan="2" width="342"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/toplogo.jpg" width="342" height="87"></td>
+          <td rowspan="2" width="34"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/topmidspace.jpg" width="34" height="87"></td>
+          <td background="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/topbg.jpg"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/topbg.jpg" width="1" height="54"></td>
+        </tr>
+        <tr>
+          <td background="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/topnavbg.jpg">
+
+<img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/btn_home.jpg" name="btn_home" id="btn_home" onclick="location.href='/index.html'" onmouseover="MM_swapImage('btn_home','','/images/btn_home_dn.jpg',1)" onmouseout="MM_swapImgRestore()" width="55" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/navspacer.jpg" width="1" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/btn_library.jpg" name="btn_library" id="btn_library" onclick="location.href='/online_books/index.html'" onmouseover="MM_swapImage('btn_library','','/images/btn_library_dn.jpg',1)" onmouseout="MM_swapImgRestore()" width="67" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/navspacer.jpg" width="1" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/btn_techotopia.jpg" name="btn_techotopia_dn.jpg" id="btn_techotopia" onclick="location.href='http://www.techotopia.com'" onmouseover="MM_swapImage('btn_techotopia','','/images/btn_techotopia_dn.jpg',1)" onmouseout="MM_swapImgRestore()" width="83" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/navspacer.jpg" width="1" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/btn_virtuatopia.jpg" name="btn_virtuatopia_dn.jpg" id="btn_virtuatopia" onclick="location.href='http://www.virtuatopia.com'" onmouseover="MM_swapImage('btn_virtuatopia','','/images/btn_virtuatopia_dn.jpg',1)" onmouseout="MM_swapImgRestore()" width="83" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/navspacer.jpg" width="1" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/btn_store.jpg" name="btn_store_dn.jpg" id="btn_store" onclick="location.href='http://www.ebookfrenzy.com/index.html'" onmouseover="MM_swapImage('btn_store','','/images/btn_store_dn.jpg',1)" onmouseout="MM_swapImgRestore()" width="83" height="33"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/navspacer.jpg" width="1" height="33"></td>
+        </tr>
+
+
+      </tbody></table></td>
+  </tr>
+  <tr> 
+    <td valign="top">
+<table border="0" background="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/topnavbg.jpg" width="100%" cellspacing="0" cellpadding="0" height="100%">
+   <tbody><tr bgcolor="#297dac">
+          <td colspan="2" align="center"><table border="0" cellpadding="1"><tbody><tr><td>
+
+<script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/getjs"></script>
+
+
+</td></tr></tbody></table>
+	</td>
+        </tr>
+
+
+        <tr>
+          <td rowspan="2" width="200" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr bgcolor="#98bfdc" align="center" height="40">
+                <td><a href="http://www.twitter.com/Techotopia"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/follow_us-a.png" alt="Follow Techotopia on Twitter"></a></td>
+              </tr>
+
+              <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/spacer.gif" width="1" height="1">
+                  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td rowspan="23" width="20"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/spacer.gif" width="20" height="1"></td>
+                      <td><br>
+                        <span class="sidelinks">On-line Guides</span></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/index.html">All Guides</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.ebookfrenzy.com/index.html">eBook Store</a></td>
+                    </tr>
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/android_index.html">iOS / Android</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_for_beginners_index.html">Linux for Beginners</a></td>
+                    </tr>
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/office_tools_index.html">Office Productivity</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_installation_index.html">Linux Installation</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_security_index.html">Linux Security</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_tools_index.html">Linux Utilities</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_virtualization_index.html">Linux Virtualization</a></td>
+                    </tr><tr>
+
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_kernel_index.html">Linux Kernel</a></td>
+		 </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_administration_index.html">System/Network Admin</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_programming_index.html">Programming</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_programming_index.html">Scripting Languages</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_devtools_index.html">Development Tools</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/web_development_index.html">Web Development</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/linux_gui_toolkit_index.html">GUI Toolkits/Desktop</a></td>
+                    </tr>
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/database_guides_index.html">Databases</a></td>
+                    </tr>
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/mail_systems/postfix_documentation/index.html">Mail Systems</a></td>
+		    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/opensolaris_2008/index.html">openSolaris</a></td>
+		    </tr>
+<tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/online_books/eclipse_guides.html">Eclipse Documentation</a></td>
+                    </tr>
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.techotopia.com/">Techotopia.com</a></td>
+                    </tr>
+
+                    <tr>
+                <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.virtuatopia.com/">Virtuatopia.com</a></td>
+		    </tr>
+
+
+                    <tr>
+                      <td rowspan="10"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/spacer.gif" width="20" height="1"></td> <td><br>
+
+                        <span class="sidelinks">How To Guides</span></td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/virtualization/index.html">Virtualization</a></td>
+                    </tr>
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/index.html">General System Admin</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/index.html">Linux Security</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/index.html">Linux Filesystems</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/index.html">Web Servers</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/index.html">Graphics &amp;
+Desktop</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/index.html">PC Hardware</a></td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/HowToGuides/windows/index.html">Windows</a></td>
+                    </tr>
+                   <tr>
+                      <td><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/arrow.jpg" width="20" height="10"><a class="navlink" href="http://www.linuxtopia.org/ProblemSolutions/index.html">Problem Solutions</a></td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td rowspan="2"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/spacer.gif" width="20" height="1"></td>
+                      <td>
+                        <span class="sidelinks">
+
+
+<span class="sidelinks"><br>
+&nbsp;&nbsp;<a href="http://goo.gl/QYxL5">
+<img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/eBookStore_trans.png"></a>
+<br><br>
+
+<br>
+
+<br>
+<!-- Ezoic - TopSidebar - sidebar -->
+<span id="ezoic-pub-ad-placeholder-101"></span>
+<!-- End Ezoic - TopSidebar - sidebar -->
+
+<table>
+<tbody><tr>
+<td>
+<script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/getjs_002"></script>
+
+</td>
+</tr>
+<tr>
+<td>
+<!-- MadAdsMedia.com Asynchronous Ad Tag For Linuxtopia.org -->
+<!-- Size: 160x600 -->
+<script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/160x600.js" type="text/javascript"></script>
+<!-- MadAdsMedia.com Asynchronous Ad Tag For Linuxtopia.org -->
+
+</td>
+</tr>
+<tr>
+<td>
+<!--PUT AD HERE IF DESIRED -->
+</td>
+</tr>
+</tbody></table>
+
+
+			</span></span></td>
+                    </tr>
+<tr>
+<td>
+
+
+
+
+</td></tr>
+
+
+
+                  </tbody></table></td>
+              </tr>
+
+
+            </tbody></table></td>
+          <td bgcolor="#FFFFFF" valign="top"> 
+            <table border="0" width="100%" cellspacing="0" cellpadding="0">
+              <tbody><tr> 
+                <td colspan="3" background="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/navbasebg.jpg" height="10"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/navbasebg.jpg" width="1" height="10"></td>
+              </tr>
+<tr>
+<td colspan="3" align="center">
+<br>
+
+<!-- Ezoic - TopBanner - under_page_title -->
+<span id="ezoic-pub-ad-placeholder-102"></span><span style="display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad box-3 adtester-container adtester-container-102"><span id="div-gpt-ad-linuxtopia_org-box-3-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:inline-block;" class="ezoic-ad"><script data-cfasync="false" type="text/javascript" style="display:none;">eval(ez_write_tag([[728,90],'linuxtopia_org-box-3','ezslot_1']));</script><div id="google_ads_iframe_/1254144/linuxtopia_org-box-3_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144/linuxtopia_org-box-3_0" title="3rd party ad content" name="google_ads_iframe_/1254144/linuxtopia_org-box-3_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="728" height="90" frameborder="0"></iframe></div></span></span>
+<!-- End Ezoic - TopBanner - under_page_title -->
+</td>
+</tr>
+
+              <tr> 
+                <td width="40">&nbsp;</td>
+                <td>
+                  <p>&nbsp;</p>
+<!--BEGIN CHAPTER-->
+
+<div class="navheader">
+<table summary="Navigation header" width="100%">
+<tbody><tr>
+<th colspan="3" align="center">Building the kernel</th>
+</tr>
+<tr>
+<td align="left" width="20%">
+<a accesskey="p" href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s02.html">Prev</a>&nbsp;</td>
+<th align="center" width="60%">Chapter&nbsp;5.&nbsp;
+Configuring and Building
+</th>
+<td align="right" width="20%">&nbsp;<a accesskey="n" href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s04.html">Next</a>
+</td>
+</tr>
+</tbody></table>
+<hr>
+</div>
+<div class="sect1" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" style="clear: both">
+<a name="id2566329">
+</a>Building the kernel</h2>
+</div>
+</div>
+<div>
+</div>
+</div>
+<p>
+Now that you have created a kernel configuration that you wish to use,
+you need to build the
+kernel.  This is as simple as entering a one-word command:
+</p>
+<pre class="screen">$ <b class="userinput">
+<tt>make</tt>
+</b>
+  CHK     include/linux/version.h
+  UPD     include/linux/version.h
+  SYMLINK include/asm -&gt; include/asm-i386
+  SPLIT   include/linux/autoconf.h -&gt; include/config/*
+  CC      arch/i386/kernel/asm-offsets.s
+  GEN     include/asm-i386/asm-offsets.h
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/mod/sumversion.o
+  HOSTLD  scripts/mod/modpost
+  HOSTCC  scripts/kallsyms
+  HOSTCC  scripts/conmakehash
+  HOSTCC  scripts/bin2c
+  CC      init/main.o
+  CHK     include/linux/compile.h
+  UPD     include/linux/compile.h
+  CC      init/version.o
+  CC      init/do_mounts.o
+...
+</pre>
+<p>
+Running <span>
+<b class="command">make</b>
+</span> will cause the kernel build system to use
+the configuration you have selected to build a kernel and all modules needed to support that configuration.
+<sup>[<a name="id2566365" href="#ftn.id2566365">5</a>]</sup>
+While the kernel is building, <span>
+<b class="command">make</b>
+</span> will display the individual file names of
+what is currently happening, along with any build warnings or errors.
+</p>
+<p>
+If the kernel build finished without any errors, you have successfully
+created a kernel image. However, it needs to be installed properly
+before you try to boot from it.  See <a href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch06.html" title="Chapter&nbsp;6.&nbsp;
+Installing and Booting From a Kernel
+">Chapter&nbsp;6, <i>
+Installing and Booting From a Kernel
+</i>
+</a> for how to do this.
+</p>
+<p>
+It is very unusual to get any build errors when building a released kernel
+version.  If you do, please report them to the Linux kernel developers so
+they can be fixed.
+</p>
+<div class="footnotes">
+<br>
+<hr align="left" width="100">
+<div class="footnote">
+<p>
+<sup>[<a name="ftn.id2566365" href="#id2566365">5</a>] </sup>
+Older kernel versions prior to the 2.6 release required the additional step
+of <span>
+<b class="command">make modules</b>
+</span> to build all needed kernel modules.
+That is no longer required.
+</p>
+</div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table summary="Navigation footer" width="100%">
+<tbody><tr>
+<td align="left" width="40%">
+<a accesskey="p" href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s02.html">Prev</a>&nbsp;</td>
+<td align="center" width="20%">
+<a accesskey="u" href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05.html">Up</a>
+</td>
+<td align="right" width="40%">&nbsp;<a accesskey="n" href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/ch05s04.html">Next</a>
+</td>
+</tr>
+<tr>
+<td align="left" width="40%" valign="top">Modifying the configuration&nbsp;</td>
+<td align="center" width="20%">
+<a accesskey="h" href="http://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/index.html">Home</a>
+</td>
+<td align="right" width="40%" valign="top">&nbsp;Advanced building options</td>
+</tr>
+</tbody></table>
+</div>
+<!--END CHAPTER-->
+<br>
+<!-- Ezoic - BottomBanner - bottom_of_page -->
+<span id="ezoic-pub-ad-placeholder-103"></span><span style="display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:970px;" class="ezoic-ad medrectangle-1 adtester-container adtester-container-103"><span id="div-gpt-ad-linuxtopia_org-medrectangle-1-0" ezaw="970" ezah="250" style="position:relative;z-index:0;display:inline-block;" class="ezoic-ad"><script data-cfasync="false" type="text/javascript" style="display:none;">eval(ez_write_tag([[970,250],'linuxtopia_org-medrectangle-1','ezslot_0']));</script><div id="google_ads_iframe_/1254144/linuxtopia_org-medrectangle-1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144/linuxtopia_org-medrectangle-1_0" title="3rd party ad content" name="google_ads_iframe_/1254144/linuxtopia_org-medrectangle-1_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" width="970" height="250" frameborder="0"></iframe></div></span></span>
+<!-- End Ezoic - BottomBanner - bottom_of_page -->
+<p>
+<script language="Javascript" type="text/javascript">
+
+	function writeBCBoxAdContent() {
+/*
+		BoxAdcontent.document.write("BC");
+		BoxAdcontent.document.write("<html><head><\/head><body>");
+		BoxAdcontent.document.write("<!-- BEGIN RAW TAG - 300 x 250 - Linuxtopia.org: Run-of-site - DO NOT MODIFY -->");
+		BoxAdcontent.document.write("<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC=\"http:\/\/ad.bannerconnect.net\/imp?z=2&Z=300x250&s=72461&t=3\"><\/IFRAME>");
+		BoxAdcontent.document.write("<!-- END TAG -->");
+		BoxAdcontent.document.close();
+*/
+        }
+
+        function writeTribalBoxAdContent() {
+
+                BoxAdcontent.document.write("<html><head><\/head><body>");
+
+		BoxAdcontent.document.write("<!-- TF 336x280 JScript VAR code -->");
+		BoxAdcontent.document.write("<center><script language=javascript><!--");
+		BoxAdcontent.document.write("document.write('<scr'+'ipt language=javascript src=\"http:\/\/a.tribalfusion.com\/j.ad?site=Linuxtopia&adSpace=ROS&size=336x280&type=var&requestID='+((new Date()).getTime() % 2147483648) + Math.random()+'\"><\/scr'+'ipt>');");
+		BoxAdcontent.document.write("\/\/-->");
+		BoxAdcontent.document.write("<\/script>");
+		BoxAdcontent.document.write("<noscript>");
+		BoxAdcontent.document.write("<a href=\"http:\/\/a.tribalfusion.com\/i.click?site=Linuxtopia&adSpace=ROS&size=336x280&requestID=1076511298\" target=_blank>");
+   		BoxAdcontent.document.write("<img src=\"http:\/\/a.tribalfusion.com\/i.ad?site=Linuxtopia&adSpace=ROS&size=336x280&requestID=1076511298\"");
+                BoxAdcontent.document.write("width=336 height=280 border=0 alt=\"Click Here\"><\/a>");
+		BoxAdcontent.document.write("<\/noscript>");
+		BoxAdcontent.document.write("<\/center>");
+		BoxAdcontent.document.write("<!-- TF 336x280 JScript VAR code -->");
+		BoxAdcontent.document.write("<\/body><\/html>");
+                BoxAdcontent.document.close();
+        }
+
+
+
+</script>
+
+<table width="100%">
+<tbody><tr>
+<td width="50%">
+<script src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/getjs_003"></script>
+</td>
+<td>
+</td>
+</tr>
+</tbody></table>
+
+                  </p></td>
+                <td width="25">&nbsp;</td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#FFFFFF">&nbsp;</td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+  <tr> 
+    <td background="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/basebg1.jpg" height="2"><img src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/basebg1.jpg" width="1" height="5"></td>
+  </tr>
+  <tr>
+    <td background="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/basebg2.jpg" valign="top" height="4">
+    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td class="baseline" height="2">&nbsp;&nbsp;Published under the terms of the Creative Commons License</td>
+        <td class="baseline" align="right"><a href="http://www.interspire.com/" class="baseline">Design by Interspire</a>&nbsp;&nbsp;</td>
+      </tr>
+
+
+    </tbody></table></td>
+  </tr>
+
+</tbody></table>
+
+
+<!-- Ezoic - Anchor Ad - bottom_floating -->
+<div class="ezmob-footer ezoic-floating-bottom ezo_ad"><center><span id="ezoic-pub-ad-placeholder-100"></span><!-- placeholder 100 blocked.  Reason : no sizes --></center></div>
+<!-- End Ezoic - Anchor Ad - bottom_floating -->
+<script type="text/javascript" style="display:none;">
+var __ez_dims = (function() {
+	var setCookie = function( name, content, expiry ) {
+		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
+	};
+	var ffid = 1;
+	var oh = window.screen.height;
+	var ow = window.screen.width;
+	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+})();
+</script><script type="text/javascript" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/edmonton.js" style="display:none;" async=""></script>
+<script type="text/javascript" src="Linux%20Kernel%20Configuration%20-%20Building%20the%20kernel_files/jellyfish.js" style="display:none;" async=""></script>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.linuxtopia_org,DomainId.31310"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.linuxtopia_org,DomainId.31310"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag-->
+<script type="text/javascript" lang="JavaScript">
+
+function getInternetExplorerVersion()
+// Returns the version of Internet Explorer or a -1
+// (indicating the use of another browser).
+{
+  var rv = -1; // Return value assumes failure.
+  if (navigator.appName == 'Microsoft Internet Explorer')
+  {
+     var ua = navigator.userAgent;
+     var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+     if (re.exec(ua) != null)
+       rv = parseFloat( RegExp.$1 );
+     }
+     return rv;
+}
+
+
+        var length = document.documentElement.offsetHeight;
+        var scroll = document.body.scrollHeight;
+
+	//document.write ("Height = " + scroll );
+
+        //if (scroll > 1980) {
+         //       resize_iframe('skyiframe1', 620);
+	//	document.write ("showint ad1 = " );
+         //       writeAdContent();
+        //}
+
+        var ver = getInternetExplorerVersion();
+
+        if ((ver == -1) && (scroll > 1970))
+	{
+           resize_iframe('skyiframe2', 620);
+           writeAdContent2();
+     	}
+
+//here you place the ids of every element you want.
+var ids=new Array('a1','a2','a3','thiscanbeanything');
+
+function switchid(id){
+        hideallids();
+        showdiv(id);
+}
+
+function hideallids(){
+        //loop through the array and hide each element by id
+        for (var i=0;i<ids.length;i++){
+                hidediv(ids[i]);
+        }
+}
+
+function hidediv(id) {
+        //safe function to hide an element with a specified id
+        if (document.getElementById) { // DOM3 = IE5, NS6
+                document.getElementById(id).style.display = 'none';
+        }
+        else {
+                if (document.layers) { // Netscape 4
+                        document.id.display = 'none';
+                }
+                else { // IE 4
+                        document.all.id.style.display = 'none';
+                }
+        }
+}
+
+function showdiv(id) {
+        //safe function to show an element with a specified id
+
+        if (document.getElementById) { // DOM3 = IE5, NS6
+                document.getElementById(id).style.display = 'block';
+        }
+        else {
+                if (document.layers) { // Netscape 4
+                        document.id.display = 'block';
+                }
+                else { // IE 4
+                        document.all.id.style.display = 'block';
+                }
+        }
+}
+</script>
+
+
+</body></html>

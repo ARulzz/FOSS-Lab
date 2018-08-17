@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper]{article}
+\title{Experiment 13: Cloud based server}
+\author{Aarya R Shankar} 
+\date{May 13, 2017}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+\begin{document}
+\maketitle
+\section{Aim}
+ 
+Application deployment on a cloud-based LAMP stack/server with PHP eg: OpenShift, Linode etc.
+
+\section{Procedure}
+
+We know how to write a php application. So let us write a simple php application to show the multiplication table of the input number. Push those into a git repository. If you already have a PHP application ready in a git repository, you may skip this step.\\
+Now we need to host it on a cloud based LAMP stack or server. For this purpose, I have chosen OpenShift Online, which is Red Hat’s public cloud application development and hosting platform that automates the provisioning, management and scaling of applications so that you can focus on writing the code only. You may also use other softwares like Linode, etc, but others may be proprietary softwares. Let us install OpenShift in our system. (Currently we are installing for Debian/Ubuntu. Please refer to the official documention of Openshift for installation on other Linux distributions.) First we need to install Ruby by running this command:\\
+\newline
+\texttt{\ sudo apt-get install ruby-full}\\
+\newline
+To check if Ruby is installed correctly, run \\
+\newline
+\texttt{\ ruby -e 'puts "Welcome to Ruby"'}\\
+\newline
+If the output is \texttt{\ Welcome to Ruby}, ruby is installed correctly. Rubygems is a part Ruby package now. But older Ubuntu repositories have it separately, so if that's the case, we may need to run the following command to install Rubygems or to verify that it is already installed.\\
+\newline
+\texttt{\ sudo apt-get install rubygems}\\
+\newline
+Now we need to install client tools by running this command.\\
+\newline
+\texttt{\ sudo gem install rhc}\\
+\newline
+Now we need to sign in to OpenShift Online \href{https://developers.redhat.com/auth/realms/rhd/protocol/openid-connect/auth?client_id=oso&redirect_uri=https%3A%2F%2Fmanage.openshift.com%2Faccounts%2Fauth%2Fkeycloak%2Fcallback&response_type=code&scope=openid+profile+email&state=9247cc93c4de221ef6029ecb525d6c2f}{here}.\\ We may either use our RedHat account, if we already have one or are planning to create one, or we may sign in using our one of our social accounts. I created a RedHat account, and signed in using that. \\
+After you sign up and log in, apply for a server. You may choose either East US or West US as a server location. If it says that you have to wait to avail a server, log out and log in again. Then you'll see a page having a blue button named "Open Web Console". Click that.\\
+Create a new project having the name as, say, foss-lab. Provide the link of your git repository to add to host it in the server.\\
+Web console is very helpful in managing our application, but for a higher level of control, we may use the command like tools. Let us use the \textit{oc} command line tool. It can be downloaded and installed by running the following commands:\\
+\newline
+\texttt{\ curl \url{https://mirror.openshift.com/pub/openshift-v3/clients/3.5.5.10/linux/oc.tar.gz} -o oc.tar.gz}\\
+\texttt{\ tar xvf oc.tar.gz}\\
+\newline
+We may run the command by\\
+\newline
+\texttt{\ ./oc}\\
+\newline
+Now we can login in to the server by running:\\
+\newline
+\texttt{\ ./oc login https://api.starter-us-east-1.openshift.com}\\
+\newline
+Now we need to switch to our project foss-lab, by running:\\
+\newline
+\texttt{\ ./oc project foss-lab}\\
+\newline
+Next we can see the current status of the project by running:\\
+\newline
+\texttt{\ ./oc status}\\
+\newline
+To view your application, open your web console, navigate to your application, go to Applications, then click on Routes tab. Clock on the hostname. You can now see your application running in the browser.\\
+\newline
+
+\section{Result}
+
+The php application is successfully deployed in the cloud based server, OpenShift, and is available at \url{http://multiplication-table-foss-lab.1d35.starter-us-east-1.openshiftapps.com/calculate.php}.
+\end{document}
